@@ -24,6 +24,7 @@ body {
   p {
     text-align: center;
     color: $color-dark;
+    margin-top: 0.5rem;
   }
 
   select:focus,
@@ -39,8 +40,10 @@ body {
 
     .rate {
       color: $color-primary;
+      border: 1px solid lighten($color-primary, 25%);
+      border-radius: 5px;
       font-size: 14px;
-      padding: 0 10px;
+      padding: 5px 10px;
     }
 
     .btn {
@@ -90,6 +93,19 @@ body {
       background: transparent;
       font-size: 30px;
       text-align: right;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    #amount-two::-webkit-outer-spin-button,
+    #amount-two::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      appearance: none;
+      margin-right: 10px;
+    }
+
+    /* Firefox */
+    #amount-two[type='number'] {
+      -moz-appearance: textfield;
     }
   }
 }
